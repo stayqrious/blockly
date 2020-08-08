@@ -137,6 +137,7 @@ Blockly.FieldImageDropdown.prototype.createImageDropdownPreviewElement_ = functi
   imagePath
 ) {
   var dropdownPreviewElement = document.createElement('img');
+  dropdownPreviewElement.setAttribute('crossOrigin', 'anonymous');
   dropdownPreviewElement.setAttribute('src', imagePath);
   return dropdownPreviewElement;
 };
