@@ -721,8 +721,7 @@ Blockly.FunctionEditor.prototype.create_ = function() {
     }
     this.functionDefinitionBlock.setTitleValue(value, 'NAME');
     if (this.functionDefinitionBlock.userCreated) {
-      // SQ ARUN: the name and id has to be in sync.
-      this.functionDefinitionBlock.getTitle_('NAME').id = this.functionDefinitionBlock.getTitleValue();
+      this.functionDefinitionBlock.getTitle_('NAME').id = value;
     }
   }
 
